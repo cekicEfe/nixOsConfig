@@ -5,6 +5,7 @@
                 isNormalUser = true;
                 description = "nixy";
                 extraGroups = [ "networkmanager" "wheel" "input" "disk" ];
-                packages = with pkgs; [];
+                packages = with pkgs;
+		[];
         };
 }
