@@ -10,7 +10,6 @@
       ./hardware-configuration.nix
       ./packages.nix
       ./modules/bundle.nix
-      ./home-manager/home.nix
       ./users/users.nix
       ./bootloader/bootloader.nix
     ];

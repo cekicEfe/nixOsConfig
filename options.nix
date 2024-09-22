@@ -1,5 +1,6 @@
 {
-  #Bootloader location
+  #Bootloader
+  #fill in only one of these
   bootLoaderLocation = "/dev/sda";
   usingUefi = false;
 
