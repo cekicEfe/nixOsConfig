@@ -8,15 +8,16 @@
 	environment.systemPackages = with pkgs; 
 	[
 		neofetch
-		docker		
 		libreoffice-qt6-still
 		libsForQt5.okular	
 		wget	
 		xorg.xkill
 		alacritty
 		ranger
-		arch-install-scripts
+		feh
 
+		gnumake
+		arch-install-scripts
 		unzip
 		zip
 		nodejs

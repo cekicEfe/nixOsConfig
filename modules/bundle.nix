@@ -7,12 +7,12 @@ let
 		  then import ./amdgpu/amdgpu.nix
 		  else import [];
  
- displayConfig = if options.usingHyprland && !options.usingGnome && !options.usingi3
+ displayConfig = if options.usingHyprland && !options.usingGnome && !options.usingithree
  		 then import ./hyprland/hyprland.nix
-		 else if !options.usingHyprland && options.usingGnome && !options.usingi3
-		 then { imports = [./gnome/gnome.nix ./xserver/xserver.nix]; }
-		 else if !options.usingHyprland && !options.usingGnome && options.usingi3
- 		 then { imports = [./i3/i3.nix ./xserver/xserver.nix]; } 
+		 else if !options.usingHyprland && options.usingGnome && !options.usingithree
+		 then import ./gnome/gnome.nix
+		 else if !options.usingHyprland && !options.usingGnome && options.usingithree
+ 		 then import ./i3/i3.nix 
 		 else import [];
 in
 {

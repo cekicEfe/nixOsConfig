@@ -4,5 +4,6 @@
 		./nixvim.nix
 		./vscode.nix
 		./steam.nix
+		./docker.nix
 	];
 }
