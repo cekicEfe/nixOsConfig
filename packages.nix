@@ -15,6 +15,7 @@
 		alacritty
 		ranger
 		feh
+		blender
 
 		gnumake
 		arch-install-scripts

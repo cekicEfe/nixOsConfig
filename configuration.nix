@@ -5,14 +5,15 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./packages.nix
-      ./modules/bundle.nix
-      ./users/users.nix
-      ./bootloader/bootloader.nix
-    ];
+  imports = [
+  	./hardware-configuration.nix
+  	./bootloader/bootloader.nix 
+  	./dm-wms/dm-wms.nix
+	./gpuDrivers/gpuDrivers.nix
+  	./packages.nix
+  	./modules/bundle.nix
+	./users/users.nix
+  ];
 
   nix.gc = {
     automatic = true;
@@ -20,10 +21,8 @@
     options = "--delete-older-than 15d";
   };
 
-  nix.settings.experimental-features = ["flakes"];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
   nix.settings.auto-optimise-store = true;
-
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Set your time zone.
   time.timeZone = "Europe/Istanbul";
