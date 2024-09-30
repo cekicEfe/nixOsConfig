@@ -7,6 +7,7 @@
   usingAmd = false;
 
   systemIsLaptop = false;
+  goLightWeight = false;
 
   #You can obviuslregyuwerh use only one of these
   usingHyprland = false;

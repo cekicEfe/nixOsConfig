@@ -1,5 +1,6 @@
 {
 	imports = [
+		./steam.nix
 		./firefox.nix
 		./nixvim.nix
 		./vscode.nix

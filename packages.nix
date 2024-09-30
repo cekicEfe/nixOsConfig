@@ -1,4 +1,5 @@
-{ pkgs , ... }:{
+{ pkgs , ... }:
+{
 	nixpkgs.config = 
 	{
 		permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
@@ -8,13 +9,14 @@
 	environment.systemPackages = with pkgs; 
 	[
 		neofetch
-		libreoffice-qt6-still
 		libsForQt5.okular	
 		wget	
 		xorg.xkill
 		alacritty
 		ranger
 		feh
+
+		libreoffice-qt6-still	
 		blender
 
 		gnumake

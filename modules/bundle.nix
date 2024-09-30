@@ -1,6 +1,3 @@
-let
- options = import ../options.nix;
-in
 {
 	imports = 
 	[
